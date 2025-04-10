@@ -1,122 +1,132 @@
-
 #navbar {
-    background-color: rgb(61, 61, 61);
+    background-color: rgb(61, 61, 61); /* Sets background color for navbar */
 }
 
 #navbarunder {
-    background-color: rgb(255, 165, 82);
-    color: rgb(255, 165, 82);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 0;
+    background-color: rgb(255, 165, 82); /* Sets background color for the line below navbar */
+    color: rgb(255, 165, 82); /* Text color for the line below navbar */
+    display: flex; /* Flexbox layout for positioning elements */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    padding: 10px 0; /* Padding for top and bottom */
 }
 
 #navbarunder a {
-    color: black;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 20px;
-    transition: 0.3s;
+    color: black; /* Text color for links */
+    text-decoration: none; /* Removes underline from links */
+    margin: 0 15px; /* Adds spacing between links */
+    font-size: 20px; /* Sets font size for links */
+    transition: 0.3s; /* 0.3s Transition between hover and neutral */
 }
 
 #navbarunder a:hover {
-    text-decoration: underline;
-    color: rgb(73, 73, 73);
-    transition: 0.3s;
+    text-decoration: underline; /* Adds underline on hover */
+    color: rgb(73, 73, 73); /* Changes color on hover */
+    transition: 0.3s; /* 0.3s Transition between hover and neutral */
 }
 
 #logo {
-    width: 300px;
-    height: 80px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 30px;
-    transition: 0.4s;
+    width: 300px; /* Sets treaty 5 logo width */
+    height: 80px; /* Sets treaty 5 logo height */
+    display: block; /* Makes treaty 5 logo a block element */
+    margin-left: auto; /* Centers treaty 5 logo horizontally */
+    margin-right: auto; /* Centers treaty 5 logo horizontally */
+    padding: 30px; /* Adds padding around the treaty 5 logo */
+    transition: 0.4s; /* 0.4s Transition between hover and neutral */
 }
 
 #logo:hover {
-    transform: scale(1.1);
-    transition: 0.4s;
+    transform: scale(1.1); /* Scales the logo on hover */
+    transition: 0.4s; /* 0.4s Transition between hover and neutral */
 }
 
 .image {
-    width: auto;
-    height: 300px;
-    border: 3px solid black;
-    border-radius: 10px;
-    transition: 0.3s;
-    display: inline;
+    width: auto; /* Allows width to auto-adjust based on image height  */
+    height: 300px; /* Sets image height */
+    border: 3px solid black; /* Adds a solid black border */
+    border-radius: 10px; /* Rounds the corners of the image */
+    transition: 0.3s; /* 0.3s Transition between hover and neutral */
+    display: inline; /* Allows the image to sit inline */
 }
 
 .image:hover {
-    transform: scale(1.05);
-    overflow: hidden;
-    transition: 0.3s;
+    transform: scale(1.05); /* Slightly scales image on hover */
+    overflow: hidden; /* Ensures content is hidden if it exceeds container */
+    transition: 0.3s; /* 0.3s Transition between hover and neutral */
 }
 
 main {
-    font-size: 20px;
+    font-size: 20px; /* Sets font size for main content */
 }
 
 .money {
-    color: rgb(23, 138, 0);
-    font-size: 21px;
+    color: rgb(23, 138, 0); /* Sets text color for whenever the dollor sign is used */
+    font-size: 21px; /* Sets font size for whenever the dollor sign is used */
 }
 
 body {
-    background-color: rgb(208, 208, 208);
+    background-color: rgb(208, 208, 208); /* Sets background color of the page */
 }
 
 .row {
-    display: flex;
-    box-sizing: border-box;
+    display: flex; /* Flexbox layout for row */
+    box-sizing: border-box; /* Ensures padding and borders are included in width/height calculations */
 }
-
+/* Column is used for multiple boxes used around my webpage*/
 .column {
-    flex: 33.33%;
-    padding: 2px;
-    background-color: rgb(82, 82, 82);
-    text-align: center;
-    margin: 0px;
+    flex: 33.33%; /* Divides space into three equal parts */
+    padding: 2px; /* Adds padding to the column */
+    background-color: rgb(82, 82, 82); /* Sets background color for column */
+    text-align: center; /* Centers content within column */
+    margin: 0px; /* Removes margin */
 }
 
 .column img {
-    filter: grayscale(0.7);
-    transition: 0.5s ease;
-    height: 300px;
-    width: 100%;
-    border: 3px solid black;
-    border-radius: 10px;
-    background-color: white;
+    filter: grayscale(0.7); /* Applies grayscale filter to images */
+    transition: 0.5s ease; /* 0.5s Transition between hover and neutral */
+    height: 300px; /* Sets image height */
+    width: 100%; /* Makes image fill the width of its container */
+    border: 3px solid black; /* Adds a black border around the image */
+    border-radius: 10px; /* Rounds the corners of the image */
+    background-color: white; /* Sets a white background behind images */
 }
 
 .column img:hover {
-    filter: grayscale(0);
-    transition: 0.5s ease;
-    transform: scale(1.05);
+    filter: grayscale(0); /* Removes grayscale effect on hover */
+    transition: 0.5s ease; /* 0.5s Transition between hover and neutral */
+    transform: scale(1.05); /* Scales image on hover */
 }
 
 #footerbar {
-    text-align: center;
-    background-color: rgb(82, 82, 82);
-    padding: 20px;
-    color: white;
+    text-align: center; /* Centers footer text */
+    background-color: rgb(82, 82, 82); /* Sets background color for footer */
+    padding: 20px; /* Adds padding to the footer */
+    color: white; /* Sets text color to white */
 }
 
-.link{
-    color: black;
-    text-decoration: none;
-    transition: 0.3s;
-    background-color: rgb(106, 106, 106);
-    border: 2px solid black;
-    border-radius: 10px;
-    padding: 5px;
+.link {
+    color: black; /* Sets color for link text */
+    text-decoration: none; /* Removes underline from link */
+    transition: 0.3s; /* 0.3s Transition between hover and neutral */
+    background-color: rgb(106, 106, 106); /* Sets background color for links */
+    border: 2px solid black; /* Adds a border around the link */
+    border-radius: 10px; /* Rounds the corners of the link */
+    padding: 5px; /* Adds padding around the link */
 }
 
-.link:hover{
-    background-color: rgb(139, 139, 139);
-    text-decoration: underline;
-    transition: 0.3s;
+.link:hover {
+    background-color: rgb(139, 139, 139); /* Changes background color on hover */
+    text-decoration: underline; /* Underlines the link on hover */
+    transition: 0.3s; /* 0.3s Transition between hover and neutral */
+}
+
+.imagelink {
+    color: white; /* Sets text color for the image links */
+    text-decoration: underline; /* Underlines text */
+    transition: 0.3s; /* 0.3s Transition between hover and neutral */
+}
+
+.imagelink:hover {
+    color: rgb(189, 189, 189); /* Changes color on hover */
+    text-decoration: underline; /* Ensures underline remains on hover */
 }

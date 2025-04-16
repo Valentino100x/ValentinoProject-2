@@ -1,9 +1,16 @@
+/*I chose a monochramtic color family and used shades of orange as my
+primary colors. Orange is the color used for reconciliation and I think it
+represents the overall goal of the site well. Orange also evokes a sense
+of forgiveness when viewed. The monochromatic color family allow me to
+emphasize reconciliation with the indigenous people as there are many
+shades of orange on the page*/
+
 #navbar {
-    background-color: rgb(61, 61, 61); /* Sets background color for navbar */
+    background-color: rgb(48, 48, 48); /* changes barkground color to dark grey*/
 }
 
 #navbarunder {
-    background-color: #ffa552; /* Sets background color for the line below navbar */
+    background-color: rgb(255, 165, 82); /* Sets background color for the line below navbar */
     color: rgb(255, 165, 82); /* Text color for the line below navbar */
     display: flex; /* Flexbox layout for positioning elements */
     justify-content: center; /* Centers content horizontally */
@@ -21,7 +28,7 @@
 
 #navbarunder a:hover {
     text-decoration: underline; /* Adds underline on hover */
-    color: rgb(73, 73, 73); /* Changes color on hover */
+    color: rgb(61, 61, 61); /* Changes color on hover */
     transition: 0.3s; /* 0.3s Transition between hover and neutral */
 }
 
@@ -65,7 +72,7 @@ main {
 }
 
 body {
-    background-color: #E0E0E0; /* Sets background color of the page */
+    background-color: rgb(224, 224, 224); /* Sets background color of the page */
 }
 
 .row {
@@ -75,8 +82,9 @@ body {
 /* Column is used for multiple boxes used around my webpage*/
 .column {
     flex: 33.33%; /* Divides space into three equal parts */
-    padding: 2px; /* Adds padding to the column */
-    background-color: rgb(82, 82, 82); /* Sets background color for column */
+    padding: 0.5px; /* Adds padding to the column */
+    background-color: rgb(48, 48, 48);
+    color: rgb(255, 173, 98);
     text-align: center; /* Centers content within column */
     margin: 0px; /* Removes margin */
 }
@@ -90,60 +98,168 @@ body {
     border-radius: 10px; /* Rounds the corners of the image */
     background-color: white; /* Sets a white background behind images */
 }
-
+/* changes properties of column on hover */
 .column img:hover {
     filter: grayscale(0); /* Removes grayscale effect on hover */
     transition: 0.5s ease; /* 0.5s Transition between hover and neutral */
     transform: scale(1.05); /* Scales image on hover */
 }
-
+/* assigns property of footerbar */
 #footerbar {
     text-align: center; /* Centers footer text */
-    background-color: rgb(82, 82, 82); /* Sets background color for footer */
+    background-color: rgb(48, 48, 48);
+    color: rgb(255, 173, 98);
     padding: 20px; /* Adds padding to the footer */
-    color: white; /* Sets text color to white */
+    border: 4px solid rgb(255, 173, 98);
 }
-
+/* assigns property of link */
 .link {
     color: black; /* Sets color for link text */
     text-decoration: none; /* Removes underline from link */
     transition: 0.3s; /* 0.3s Transition between hover and neutral */
-    background-color: rgb(106, 106, 106); /* Sets background color for links */
+    background-color: rgb(186, 186, 186); /* Sets background color for links */
     border: 2px solid black; /* Adds a border around the link */
     border-radius: 10px; /* Rounds the corners of the link */
     padding: 5px; /* Adds padding around the link */
+    font-size: 2rem;
 }
-
+/* changes properties on hover of link */
 .link:hover {
-    background-color: rgb(139, 139, 139); /* Changes background color on hover */
+    background-color: rgb(165, 165, 165); /* Changes background color on hover */
     text-decoration: underline; /* Underlines the link on hover */
     transition: 0.3s; /* 0.3s Transition between hover and neutral */
 }
-
+/* assigns property of imagelink */
 .imagelink {
-    color: white; /* Sets text color for the image links */
+    color: rgb(255, 173, 98); /* Sets text color for the image links */
     text-decoration: underline; /* Underlines text */
     transition: 0.3s; /* 0.3s Transition between hover and neutral */
 }
-
+/* changes properties on hover of imagelink */
 .imagelink:hover {
-    color: rgb(220, 220, 220); /* Changes color on hover */
+    color: rgb(255, 165, 82); /* Changes color on hover */
     text-decoration: underline; /* Ensures underline remains on hover */
 }
+/* effects all elements */
+*{
+    font-size: 62.5%; /* changes font size to 62.5% of original size */
+    font-family: Cambria; /* alters font family to cambria */
+    letter-spacing: 0.6px; /* adgusts space between letters by o.6px */
+    word-spacing: 0.6px; /* adgusts space between words by o.6px */
+    line-height: 27px; /* adgusts space between lines by 27px */
+}
+/* effects all header1 */
+h1{
+    font-size: 5.5rem; /* sets font size to 5.5rem or 55 pixels */
+}
+/* effects all header2 */
+h2{
+    font-size: 4rem; /* sets font size to 4rem or 40 pixels */
+}
+/* effects all header6 */
+h6{
+    font-size: 3rem; /* sets font size to 3rem or 30 pixels */
+}
+/* effects all paragraphs */
+p{
+    font-size: 2rem; /* sets font size to 2rem or 20 pixels */
+}
+/* effects every strong elemet */
+strong{
+    font-size: 2.4rem; /* sets font size to 2.4rem or 24 pixels */
+    font-weight: bolder; /* increases the boldness of strong tag */
+}
+/* changes the color of elements with class imagetext */
+.imagetext{
+    color: rgb(255, 173, 98);
+}
+/* Wraps video and form side-by-side */
+.video-form-wrapper {
+    display: flex; /* allows me to use align-items and justify content */
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 20px; /* adds 20px of padding */
+    background-color: rgb(48, 48, 48); /* sets background color to a dark gray */
+    border-radius: 10px; /* sets border radius to 10px */
+}
+/* Video column styling */
+.columnvideo {
+    background-color: rgb(48, 48, 48); /* background color is dark gray */
+    color: rgb(255, 173, 98); /* text is now orange */
+    padding: 10px; /* 10px od padding on all side */
+    text-align: center; /* aligns text to the center */
+    max-width: 600px; /* the max width is set to 600px */
+    flex: 1 1 45%;
+}
 
-#form{
-    background-color: rgb(82, 82, 82);
-    border-radius: 5px;
-    color: white;
+/* Styled feedback form */
+#form {
+    background-color: rgb(48, 48, 48);
+    color: rgb(255, 173, 98);
+    border-radius: 10px;
+    padding: 30px;
+    margin: 10px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 2px solid rgb(255, 123, 0);
 }
-#submit{
-    background-color: #ffa552;
+
+/* Form title */
+#formtitle {
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+    text-align: center;
+    color: rgb(255, 173, 98);
+}
+
+/* Radio group styling */
+.form-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 2rem;
+}
+/* effects properties of the radio input type */
+input[type="radio"] {
+    transform: scale(1.3); /* changes the size of radio button */
+    accent-color: rgb(255, 123, 0); /* sets accent color */
+    cursor: pointer; /* changes the cursor to its cursor property to indicate that it is hovering over the radio */
+}
+/* changes properties of all labels */
+label {
+    cursor: pointer; /* changes the cursor to its cursor property to indicate that it is hovering over the radio */
+    font-size: 1.8rem; /* sets fontsize to 1.8 rem or 18 pixels */
+}
+
+/* Submit button */
+#submit {
+    background-color: rgb(255, 123, 0); /*changes backgroun dcolor to orange */
     color: black;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 10px;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 10px 20px;
     transition: 0.3s;
+    font-size: 2rem;
+    cursor: pointer;
+    align-self: center;
+    margin-top: 10px;
 }
-#submit:hover{
-    background-color: #ff7b00;
+/* Submit button on hover */
+#submit:hover {
+    background-color: rgb(255, 173, 98); /* background color is set to orange */
+    transform: scale(1.05); /* changes size by .05 on hover */
+}
+/* submit button on clicked */
+#submit:active {
+    background-color: #ffeedf; /* background color is set to orange */
+    transform: scale(1.05); /* changes size by .05 on hover */
+}
+#mysterybutton{
+    margin: 0px; /* sets margin to 0 px */
 }

@@ -171,15 +171,15 @@ strong{
 }
 /* changes the color of elements with class imagetext */
 .imagetext{
-    color: rgb(255, 173, 98);
+    color: rgb(255, 173, 98); /* sets the color to orange */
 }
 /* Wraps video and form side-by-side */
 .video-form-wrapper {
     display: flex; /* allows me to use align-items and justify content */
-    flex-wrap: wrap; 
-    justify-content: space-around;
-    align-items: flex-start;
-    gap: 30px;
+    flex-wrap: wrap; /* wraps around on smaller screens */
+    justify-content: space-around; /* spaces elements with this class */
+    align-items: flex-start; /* elements start at the top */
+    gap: 30px; /* adds gap between columns and image */
     padding: 20px; /* adds 20px of padding */
     background-color: rgb(48, 48, 48); /* sets background color to a dark gray */
     border-radius: 10px; /* sets border radius to 10px */
@@ -191,39 +191,39 @@ strong{
     padding: 10px; /* 10px od padding on all side */
     text-align: center; /* aligns text to the center */
     max-width: 600px; /* the max width is set to 600px */
-    flex: 1 1 45%;
+    flex: 1 1 45%; /* how an item will grow or shrink to fit a space */
 }
 
 /* Styled feedback form */
 #form {
-    background-color: rgb(48, 48, 48);
-    color: rgb(255, 173, 98);
-    border-radius: 10px;
-    padding: 30px;
-    margin: 10px;
-    max-width: 400px;
-    width: 100%;
-    box-shadow: 0 0 10px rgba(0,0,0,0.4);
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    border: 2px solid rgb(255, 123, 0);
+    background-color: rgb(48, 48, 48); /* background color is dark gray */
+    color: rgb(255, 173, 98); /* color is orange */
+    border-radius: 10px; /* adjusts the radius of the border */
+    padding: 30px; /* adds 30px of space all around the elment */
+    margin: 10px; /* adds 10px of space above the element */
+    max-width: 400px; /* sets the maximum width to 400px */
+    width: 100%; /* sets the width to 100% */
+    box-shadow: 0 0 10px rgba(0,0,0,0.4); /* gives the box a "shadow" */
+    display: flex; /* allows the use of justify content and align items */
+    flex-direction: column; /* changes the direction of how the options are displayed to column */
+    gap: 15px; /* adds gap between columns and image */
+    border: 2px solid rgb(255, 123, 0); /* changes the border to 2px and orange */
 }
 
 /* Form title */
 #formtitle {
-    font-size: 2.4rem;
-    margin-bottom: 10px;
-    text-align: center;
-    color: rgb(255, 173, 98);
+    font-size: 2.4rem; /* sets font size to 2.4rem or 24 pixels */
+    margin-bottom: 10px; /* adds a margin to the bottom that is 10px */
+    text-align: center; /* aligns the text to the center */
+    color: rgb(255, 173, 98); /* changes the color to orange */
 }
 
 /* Radio group styling */
 .form-option {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 2rem;
+    display: flex; /* allow for justify and align to be used */
+    align-items: center; /* aligns the element vertically to the center */
+    gap: 10px; /* adds gap between columns and image */
+    font-size: 2rem; /* sets font size to 2rem or 20 pixels */
 }
 /* effects properties of the radio input type */
 input[type="radio"] {
@@ -240,15 +240,15 @@ label {
 /* Submit button */
 #submit {
     background-color: rgb(255, 123, 0); /*changes backgroun dcolor to orange */
-    color: black;
-    border: 2px solid black;
-    border-radius: 8px;
-    padding: 10px 20px;
-    transition: 0.3s;
-    font-size: 2rem;
-    cursor: pointer;
-    align-self: center;
-    margin-top: 10px;
+    color: black; /* color is black */
+    border: 2px solid black; /* sets border to 2px and black */
+    border-radius: 8px; /* sets radius of the border to 8px */
+    padding: 10px 20px; /* adjusts the padding */
+    transition: 0.3s; /* makes the transition 0.3seconds */
+    font-size: 2rem; /* changes the font size to 2rem or 20px */
+    cursor: pointer; /* changes the cursor icon to point */
+    align-self: center; /* aligns the element with this id to the center */
+    margin-top: 10px; /* adds a margin to the top 10px */
 }
 /* Submit button on hover */
 #submit:hover {
